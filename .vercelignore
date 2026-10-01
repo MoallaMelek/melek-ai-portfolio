@@ -1,0 +1,10 @@
+.env*
+node_modules
+out
+.next
+.ai/
+AI_TEAM.md
+AGENTS.md
+CLAUDE.md
+REFINEMENT.md
+VALIDATION.md

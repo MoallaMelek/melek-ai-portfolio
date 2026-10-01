@@ -1,0 +1,190 @@
+{
+ "/projects/ghosthands/demo-poster.webp": [
+  960,
+  470
+ ],
+ "/projects/ghosthands/interface.webp": [
+  1424,
+  1488
+ ],
+ "/projects/ghosthands/results.webp": [
+  1800,
+  480
+ ],
+ "/projects/memory-dungeon/dashboard.webp": [
+  631,
+  668
+ ],
+ "/projects/memory-dungeon/hidden-control.webp": [
+  1440,
+  480
+ ],
+ "/projects/memory-dungeon/hidden-treatment.webp": [
+  1440,
+  480
+ ],
+ "/projects/memory-dungeon/intervention.webp": [
+  589,
+  668
+ ],
+ "/projects/memory-dungeon/memory-noise.webp": [
+  1280,
+  720
+ ],
+ "/projects/memory-dungeon/memory-reset.webp": [
+  1280,
+  720
+ ],
+ "/projects/memory-dungeon/success-by-architecture.webp": [
+  1280,
+  720
+ ],
+ "/projects/memory-dungeon/training-curves.webp": [
+  1600,
+  640
+ ],
+ "/projects/payment-observability/alerts.webp": [
+  1520,
+  728
+ ],
+ "/projects/payment-observability/analyst.webp": [
+  1520,
+  728
+ ],
+ "/projects/payment-observability/dashboard.webp": [
+  1520,
+  728
+ ],
+ "/projects/protein-synthesis/architecture.webp": [
+  1600,
+  3000
+ ],
+ "/projects/protein-synthesis/baseline-vs-model.webp": [
+  1800,
+  889
+ ],
+ "/projects/protein-synthesis/cai-scatter.webp": [
+  1800,
+  892
+ ],
+ "/projects/protein-synthesis/dna-flow.webp": [
+  1800,
+  897
+ ],
+ "/projects/protein-synthesis/pipeline-execution.webp": [
+  1800,
+  892
+ ],
+ "/projects/protein-synthesis/ranking.webp": [
+  1800,
+  873
+ ],
+ "/projects/protein-synthesis/residuals.webp": [
+  1800,
+  883
+ ],
+ "/projects/protein-synthesis/shap.webp": [
+  1800,
+  887
+ ],
+ "/projects/reward-goblin/distance-poster.webp": [
+  870,
+  444
+ ],
+ "/projects/reward-goblin/edge-poster.webp": [
+  870,
+  444
+ ],
+ "/projects/reward-goblin/edge-training.webp": [
+  1300,
+  442
+ ],
+ "/projects/reward-goblin/fixed-poster.webp": [
+  870,
+  444
+ ],
+ "/projects/reward-goblin/lava-poster.webp": [
+  870,
+  444
+ ],
+ "/projects/reward-goblin/results.webp": [
+  1170,
+  1029
+ ],
+ "/projects/reward-goblin/speed-poster.webp": [
+  870,
+  444
+ ],
+ "/projects/reward-goblin/touch-poster.webp": [
+  870,
+  444
+ ],
+ "/projects/reward-goblin/wall-poster.webp": [
+  870,
+  444
+ ],
+ "/projects/reward-goblin/wall-training.webp": [
+  1300,
+  442
+ ],
+ "/projects/telekinesis/step-1.webp": [
+  640,
+  458
+ ],
+ "/projects/telekinesis/step-2.webp": [
+  640,
+  458
+ ],
+ "/projects/telekinesis/step-3.webp": [
+  640,
+  458
+ ],
+ "/projects/telekinesis/step-4.webp": [
+  640,
+  458
+ ],
+ "/projects/telekinesis/step-5.webp": [
+  640,
+  458
+ ],
+ "/projects/telekinesis/step-6.webp": [
+  640,
+  458
+ ],
+ "/projects/telekinesis/step-7.webp": [
+  640,
+  458
+ ],
+ "/projects/telekinesis/step-8.webp": [
+  640,
+  458
+ ],
+ "/projects/vector/hud-carousel.webp": [
+  1600,
+  900
+ ],
+ "/projects/vector/hud-demo-poster.webp": [
+  800,
+  450
+ ],
+ "/projects/vector/hud-drag.webp": [
+  1600,
+  900
+ ],
+ "/projects/vector/hud-draw.webp": [
+  1600,
+  900
+ ],
+ "/projects/vector/hud-hover.webp": [
+  1600,
+  900
+ ],
+ "/projects/vector/hud-pinch.webp": [
+  1600,
+  900
+ ],
+ "/projects/vector/hud-throw.webp": [
+  1600,
+  900
+ ]
+}

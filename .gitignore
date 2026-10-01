@@ -1,0 +1,43 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches/
+!.yarn/plugins/
+!.yarn/releases/
+!.yarn/versions/
+
+# Environment files and credentials
+.env*
+*.pem
+*.key
+*.p12
+*.pfx
+*.keystore
+.npmrc
+.netrc
+credentials*.json
+service-account*.json
+*serviceAccount*.json
+
+# Generated output
+.next/
+out/
+dist/
+build/
+coverage/
+*.tsbuildinfo
+
+# Local deployment and agent state
+.vercel/
+.ai/
+production-http-verification.json
+
+# Logs and system files
+*.log
+.DS_Store
+Thumbs.db
+# Generated Next.js types
+next-env.d.ts
+
