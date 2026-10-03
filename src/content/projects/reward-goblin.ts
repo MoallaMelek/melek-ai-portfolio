@@ -6,10 +6,10 @@ const S = "reward-goblin";
 export const rewardGoblin: Project = {
   slug: S,
   title: "Reward Goblin",
-  oneLiner: "A physics playground where real PPO agents optimise the reward you wrote instead of the task you meant.",
+  oneLiner: "Currently improving this physics playground where real PPO agents optimise the reward you wrote instead of the task you meant.",
   question: "If an agent only ever sees a number, what does it learn when the number is slightly wrong?",
   year: "2026",
-  status: "Working research demo · 7 experiments · 48 trained runs",
+  status: "Currently improving · Working research demo · 7 experiments · 48 trained runs",
   domains: ["rl"],
   stack: ["Python", "PyTorch", "Stable-Baselines3", "Gymnasium", "Pymunk", "FastAPI", "JavaScript"],
   repo: "https://github.com/MoallaMelek/Reward-Goblin",
