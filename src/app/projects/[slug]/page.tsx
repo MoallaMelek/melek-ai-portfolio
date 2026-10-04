@@ -6,7 +6,7 @@ import { DepthLink } from "@/components/DepthToggle";
 import { MediaFigure } from "@/components/Media";
 import { Toc } from "@/components/Toc";
 import { domains, getProject, projects } from "@/content";
-import { SITE_URL, profile } from "@/content/profile";
+import { SITE_URL } from "@/content/profile";
 
 export const dynamicParams = false;
 
@@ -22,8 +22,8 @@ export async function generateMetadata({ params }: PageProps<"/projects/[slug]">
   return {
     title: p.title,
     description: p.oneLiner,
-    alternates: { canonical: `/projects/${p.slug}` },
-    openGraph: { type: "article", title, description: p.oneLiner, url: `/projects/${p.slug}` },
+    alternates: { canonical: `/projects/${p.slug}/` },
+    openGraph: { type: "article", title, description: p.oneLiner, url: `/projects/${p.slug}/` },
     twitter: { card: "summary_large_image", title, description: p.oneLiner },
   };
 }
@@ -49,8 +49,8 @@ export default async function ProjectPage({ params }: PageProps<"/projects/[slug
     description: p.oneLiner,
     codeRepository: p.repo,
     programmingLanguage: p.stack.filter((s) => ["Python", "TypeScript", "JavaScript", "C++", "PHP"].includes(s)),
-    author: { "@type": "Person", name: profile.name, url: SITE_URL },
-    url: `${SITE_URL}/projects/${p.slug}`,
+    author: { "@id": `${SITE_URL}/#person` },
+    url: `${SITE_URL}/projects/${p.slug}/`,
   };
 
   let n = 0;

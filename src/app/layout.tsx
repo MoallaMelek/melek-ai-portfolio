@@ -58,8 +58,17 @@ const boot = `try{var q=new URLSearchParams(location.search).get('depth');if(q==
 const personLd = {
   "@context": "https://schema.org",
   "@type": "Person",
+  "@id": `${SITE_URL}/#person`,
   name: profile.name,
-  url: SITE_URL,
+  url: `${SITE_URL}/`,
+  image: {
+    "@type": "ImageObject",
+    "@id": `${SITE_URL}/#portrait`,
+    contentUrl: `${SITE_URL}/melek-portrait.webp`,
+    caption: "Portrait of Melek Moalla",
+    width: 800,
+    height: 1000,
+  },
   email: `mailto:${profile.email}`,
   jobTitle: "AI engineering student",
   affiliation: { "@type": "CollegeOrUniversity", name: profile.schoolFull },

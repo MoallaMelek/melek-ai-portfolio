@@ -2,7 +2,7 @@ import { CopyButton } from "@/components/CopyButton";
 import { WorkIndex } from "@/components/WorkIndex";
 import { LabWork } from "@/components/LabWork";
 import { domains, lab, projects } from "@/content";
-import { profile, timeline } from "@/content/profile";
+import { SITE_URL, profile, timeline } from "@/content/profile";
 import type { DomainId } from "@/content/types";
 
 export default function Home() {
@@ -19,6 +19,15 @@ export default function Home() {
   const selected = order.map((slug) => projects.find((p) => p.slug === slug)!);
   return (
     <div className="showcase-home">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "ProfilePage",
+        "@id": `${SITE_URL}/#profile`,
+        url: `${SITE_URL}/`,
+        name: `${profile.name} — AI engineering portfolio`,
+        mainEntity: { "@id": `${SITE_URL}/#person` },
+        primaryImageOfPage: { "@id": `${SITE_URL}/#portrait` },
+      }) }} />
       <section className="intro wrap" aria-labelledby="hero-title">
         <div className="intro__eyebrow label">
           <span>AI engineering student · ESPRIT</span>
@@ -54,7 +63,7 @@ export default function Home() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/melek-portrait.webp"
-              alt="Melek Moalla"
+              alt="Portrait of Melek Moalla"
               width={800}
               height={1000}
               fetchPriority="high"
