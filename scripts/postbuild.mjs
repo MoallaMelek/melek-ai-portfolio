@@ -45,10 +45,8 @@ for (const f of files) {
   const i = rel.findIndex((seg) => seg.startsWith("__next.") && !seg.endsWith(".txt"));
   if (i === -1 || !f.endsWith(".txt")) continue;
   const flat = join(OUT, ...rel.slice(0, i), rel.slice(i).join("."));
-  if (!existsSync(flat)) {
-    copyFileSync(f, flat);
-    flattened++;
-  }
+  copyFileSync(f, flat);
+  flattened++;
 }
 
 // 3. GitHub Pages

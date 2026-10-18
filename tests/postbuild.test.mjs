@@ -27,3 +27,17 @@ test('export rewrites plain and hashed OG links without doubling extensions', (t
   run();
   assert.equal(readFileSync(join(out, 'index.html'), 'utf8'), html);
 });
+
+test('repeated exports refresh existing flattened segment payloads', (t) => {
+  const {out, run} = fixture(t);
+  const nested = join(out, '__next.a', '$d$slug');
+  mkdirSync(nested, {recursive: true});
+  const source = join(nested, '__PAGE__.txt');
+  const flattened = join(out, '__next.a.$d$slug.__PAGE__.txt');
+  writeFileSync(source, 'first build');
+  run();
+  assert.equal(readFileSync(flattened, 'utf8'), 'first build');
+  writeFileSync(source, 'updated page');
+  run();
+  assert.equal(readFileSync(flattened, 'utf8'), 'updated page');
+});
