@@ -31,7 +31,7 @@ files = walk(OUT);
 let rewritten = 0;
 for (const f of files.filter((x) => x.endsWith(".html") || x.endsWith(".txt"))) {
   const s = readFileSync(f, "utf8");
-  const t = s.replace(/\/opengraph-image\?[0-9a-z]+/g, "/opengraph-image.png");
+  const t = s.replace(/\/opengraph-image(?:\?[0-9a-z]+)?(?=["'\\\s<]|$)/g, "/opengraph-image.png");
   if (t !== s) {
     writeFileSync(f, t);
     rewritten++;
