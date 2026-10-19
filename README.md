@@ -26,4 +26,8 @@ npm run build
 npm run preview
 ```
 
-The build generates `out/`. The preview runs at http://localhost:4173. No environment variables or API credentials are required for the portfolio.
+The build generates `out/`.
+
+This project sets `output: "export"` in `next.config.ts`. Serve the generated files with `npm run preview` after building; `npm start` invokes `next start`, which is not the server for a static export. For deployment, publish the contents of `out/` to a static host, preserving the exported route directories.
+
+ The preview runs at http://localhost:4173. No environment variables or API credentials are required for the portfolio.
