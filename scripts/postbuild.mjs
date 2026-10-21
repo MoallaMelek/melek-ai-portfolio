@@ -8,7 +8,7 @@ import { readdirSync, statSync, renameSync, readFileSync, writeFileSync, copyFil
 import { join, relative, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 
-const OUT = join(dirname(fileURLToPath(import.meta.url)), "..", "out");
+const OUT = process.env.POSTBUILD_OUT ?? join(dirname(fileURLToPath(import.meta.url)), "..", "out");
 if (!existsSync(OUT)) throw new Error("run next build first");
 
 const walk = (dir) =>
